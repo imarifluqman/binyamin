@@ -1,0 +1,670 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container-fluid a img{
+    margin-left: 100px;
+    width: 200px;
+}
+#set_text{
+    margin-right: 120px;
+    
+}
+#text_5{
+    color: orangered;
+    font-family: bolder;
+    border-radius: 5px;
+    width: 100%;
+    padding: 7px 30px;
+    /* background: orangered; */
+    font-size: 1.3rem;
+}
+#text_4{
+    font-family: bolder;
+    font-size: 1.3rem;
+    transition: 250ms;
+
+}
+#text_4:hover{
+    color: orangered;
+    
+}
+
+
+
+
+/*...... home styling start...... */
+.carousel-item img{
+    max-height: 89vh;
+    height: 100%;
+}
+/*...... home styling end...... */
+
+.assiment{
+    padding: 80px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 30px;
+    margin: auto;
+}
+.about, .products, .clients, .service, .contact, footer{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: orangered; */
+}
+.assiment .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.assiment .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.assiment .title::after{
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: orangered;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/*...... about styling start...... */
+.about .title::after{
+    content: "*****";
+    background-color: orangered;
+    color: white;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about{
+    background-color: orangered;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgb(19, 19, 19);
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: black;
+}
+.about .about-content .right .text_1{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: black;
+}
+.about .about-content .right p .text_show{
+    display: none;
+}
+.about .about-content .right p #btn_2{
+    display: none;
+}
+.about .about-content .right p #text_2 #text_3{
+    display: block;
+}
+.about .about-content .right p{
+    text-align: justify;
+    color: white;
+}
+.about .about-content .right .btn_1{
+    display: inline-block;
+    color: orangered;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1px 10px;
+    margin-left: 5px;
+    border-radius: 6px;
+    border: 2px solid orangered;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+.about .about-content .right .btn_1:hover{
+    color: #fff;
+    background: orangered;
+}
+/*...... about styling end...... */
+
+/*...... product styling end...... */
+.products, .clients{
+    color: #fff;
+    background: orangered;
+}
+.products .title::before,
+.clients .title::before{
+    background: #fff;
+}
+.products .title::after{
+    /* background: orangered; */
+    content: "*****";
+}
+.products .products-content{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 6rem auto;
+}
+.products .products-content .indicat{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.products .products-content .indicat .btns{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.products .products-content .indicat .star{
+    width: 45px; 
+}
+.products .products-content .testimon{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.products .products-content .testimon .pro-r{
+    display: flex;  
+    width: 3200px;
+    transition: 0.5s;
+}
+.products .products-content .testimon .pro-c{
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+.products .products-content .testimon .user-img{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 100%;
+}
+.products .products-content .testimon .user-img img{
+    height: 100%;
+    width: 300px;
+    border-radius: 10px;
+}
+.products .products-content .testimon .user-text{
+    background: orangered;
+    width: 520px;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color: rgb(216, 216, 216);
+    padding: 45px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.products .products-content .testimon .user-text p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.products .products-content .testimon .user-text h3{
+    margin: 35px 0 5px;
+    color: white;
+}
+/*...... product styling end...... */
+
+/*...... clients styling start...... */
+
+.clients .title::after{
+    background-color: orangered;
+    color: white;
+    content: "*****";
+}
+.clients .clients-content{
+    margin: 40px 0;
+    font-size: 14px;
+    font-weight: 500;
+    /* color: black; */
+    background-color: orangered;
+    -webkit-font-smoothing: antialiased;
+  }
+.clients .clients-content .testy .contain{
+    display: flex;  
+    width: 3200px;
+    transition: 0.5s;
+}
+.clients .clients-content .indicate{
+    text-align: center;
+    margin-top: 10px;
+}
+.clients .clients-content .indicate .btnes{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.clients .clients-content .indicate .stars{
+    width: 45px; 
+}
+.clients .clients-content .testy {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+ .clients .clients-content .testy .contain .left_1{
+    width: 1238px;
+    height: 400px;
+} 
+.clients .clients-content .testy .contain .left_1{
+    padding: 40px 80px;
+    display: flex;
+    justify-content: center;
+}  
+ 
+  
+.clients .clients-content .contain p{
+    line-height: 1.5em;
+}
+  
+.clients .clients-content .contain h1 + p, p + p{
+    margin-top: 10px;
+}
+   
+ 
+  
+.clients .car-wrap{
+    margin: 10px;
+    transform: perspective(800px);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+  
+.clients .car-wrap:hover .car-inf{
+        transform: translateY(0);
+}
+  
+.clients .car-wrap:hover .car-inf p{
+        opacity: 1;
+}
+  
+.clients .car-wrap:hover .car-inf, .car-wrap:hover .car-inf p{
+        transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+  
+.clients .car-wrap:hover .car-inf:after{
+        transition: 5s cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: 1;
+        transform: translateY(0);
+}
+  
+.clients .car-wrap:hover .car-bg{
+        transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: 0.8;
+}
+.clients .car-wrap:hover .car{
+        transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+        box-shadow:
+          rgba(255, 255, 255, 0.2) 0 0 40px 5px,
+          rgba(255, 255, 255, 1) 0 0 0 1px,
+          rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+          inset #333 0 0 0 5px,
+          inset white 0 0 0 6px;
+}
+  
+.clients .car{
+    position: relative;
+    flex: 0 0 240px;
+    width: 240px;
+    height: 320px;
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:
+    rgba(0, 0, 0, 0.66) 0 30px 60px 0,
+      inset #333 0 0 0 5px,
+      inset rgba(255, 255, 255, 0.5) 0 0 0 6px;
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+  
+.clients .car-bg{
+    opacity: 0.4;
+    position: absolute;
+    top: -0; left: -0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition:
+      1s cubic-bezier(0.445, 0.05, 0.55, 0.95),
+      opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    pointer-events: none;
+}
+  
+.clients .car-inf{
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    transform: translateY(40%);
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+  
+.clients .car-inf p{
+      opacity: 0;
+      text-shadow: rgba(black, 1) 0 2px 3px;
+      transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+    
+.clients .car-inf *{
+      position: relative;
+      z-index: 1;
+}
+    
+.clients .car-inf:after{
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to bottom, transparent 0%, rgba(#000, 0.6) 100%);
+      background-blend-mode: overlay;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+  
+.clients .car-inf h1{
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: rgba(black, 0.5) 0 10px 10px;
+}
+/*...... client styling end...... */
+
+/*...... service styling start...... */
+.service .title::after{
+    content: "*****";
+}
+.max-widt{
+    max-width: 1500px;
+    padding: 0 30px;
+    margin: auto;
+}
+.service .service-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.service .service-content .left{
+    width: 25%;
+}
+.service .service-content .left img{
+    height: 200px;
+    width: 200px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 5px 5px 12px rgb(19, 19, 19);
+}
+.service .service-content .right{
+    width: 75%;
+    padding-left: 8rem;
+}
+.service .service-content .right .text{
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.service .service-content .right p{
+    font-size: 1.1rem;
+    width: 850px;
+    margin-bottom: 2rem;
+}
+.service .service-content .right .parameter{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: orangered;
+}
+/*...... service styling end...... */
+
+/*...... contact styling start...... */
+.contact .title::after{
+    content: "*****";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    color: orangered;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .rows{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .rows i{
+    color: orangered;
+}
+.contact .contact-content .rows .info{
+    margin-left: 30px;   
+}
+.contact .contact-content .rows i{
+    font-size: 25px;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 220px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+} 
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    /* height: 30rem; */
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid orangered;
+    background: orangered;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: orangered;
+    background: none;
+} 
+/*...... contact styling end...... */
+
+/*...... footer styling start...... */
+footer{
+    background: #111;
+    /* padding: 20px 23px; */
+    /* color: #fff; */
+}
+footer .container-fluid ul .woo{
+    color: #fff;
+    background: #111;
+}
+footer .container-fluid ul .foo{
+    background: #111;
+}
+footer .container-fluid ul .foo a{
+    color: rgb(216, 216, 216);
+    background: #111;
+
+}
+footer .container-fluid .joo .fab{
+    color: rgb(216, 216, 216);
+    font-size: 1.3rem;
+    /* margin: 1rem; */
+    /* text-align: center; */ 
+    margin-left: 3.8rem;
+    transition: 300ms;
+}
+footer .container-fluid .joo .fab span{
+    color: white;
+    margin-left: 1.5rem;
+    display: none;
+    font-size: 1.2rem;
+    /* text-decoration: none; */
+}
+footer .container-fluid .joo .fab:hover{
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+footer .container-fluid .joo .fab:hover span{
+    display: inline-block;
+    transition: 2s;
+}
+footer .container-fluid ul .foo a:hover{
+    color: orangered;
+}
+footer .container-fluid p{
+    color: #fff;
+    /* text-align: end; */
+    /* text-decoration: none; */
+}
+footer .container-fluid p a{
+    color: orangered;
+    text-decoration: none;
+}
+footer .container-fluid p span{
+    color: #fff;
+    /* text-decoration: none; */
+}
+footer .container-fluid p a:hover{
+    border-bottom: 2px solid orangered;
+}
+/*...... footer styling end...... */
+
+/* .ups-btns{
+    width:  42px;
+    height: 45px;
+    color: white;
+    background: crimson;
+} */
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: orangered;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
