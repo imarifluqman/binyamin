@@ -123,68 +123,7 @@ const app = new Vue({
 });
 //_______client slider end________
 
-//_______product slider start________
-
-var btns = document.getElementsByClassName("btns");
-var pro_r = document.getElementById("pro-r");
-
-btns[0].onclick = function () {
-  pro_r.style.transform = "translateX(0px)";
-  for (var i = 0; i < 4; i++) {
-    btns[i].classList.remove("star");
-  }
-  this.classList.add("star");
-};
-btns[1].onclick = function () {
-  pro_r.style.transform = "translateX(-800px)";
-  for (var i = 0; i < 4; i++) {
-    btns[i].classList.remove("star");
-  }
-  this.classList.add("star");
-};
-btns[2].onclick = function () {
-  pro_r.style.transform = "translateX(-1600px)";
-  for (var i = 0; i < 4; i++) {
-    btns[i].classList.remove("star");
-  }
-  this.classList.add("star");
-};
-btns[3].onclick = function () {
-  pro_r.style.transform = "translateX(-2400px)";
-  for (var i = 0; i < 4; i++) {
-    btns[i].classList.remove("star");
-  }
-  this.classList.add("star");
-};
-
-var btnes = document.getElementsByClassName("btnes");
-var apple = document.getElementById("app");
-
-btnes[0].onclick = function () {
-  apple.style.transform = "translateX(0px)";
-  for (var i = 0; i < 2; i++) {
-    btnes[i].classList.remove("stars");
-  }
-  this.classList.add("stars");
-};
-btnes[1].onclick = function () {
-  apple.style.transform = "translateX(-1238px)";
-  for (var i = 0; i < 2; i++) {
-    btnes[i].classList.remove("stars");
-  }
-  this.classList.add("stars");
-};
-// var count = 1;
-// setInterval(function(){
-//     document.getElementById('min' + count).checked = true;
-//     count++;
-//     if(count > 4){
-//         count = 1;
-//     }
-// }, 1000);
-
-//_______product slider end________
-
+// scroll-up
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 500) {
@@ -199,3 +138,11 @@ $(document).ready(function () {
     $("html").animate({ scrollTop: 0 });
   });
 });
+
+let year = document.getElementById("year");
+
+let date = new Date().getFullYear();
+
+year.innerText = ` 2015 - ${date}  BinYamin Steel Industries. All Rights Reserved.`;
+
+console.log(year);
